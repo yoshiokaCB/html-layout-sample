@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <title>デモサイト</title>
+
+  <link rel="stylesheet" href="./css/style.css" media="screen,tv,print" />
+  <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+
+  <style>
+    .padding-sample{}
+    .padding-sample div{
+      width: 200px;
+      background: #ccc;
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+    }
+    .padding-sample div p{
+      background: red;
+    }
+
+    /*box-sizingの例*/
+    /*===========================================*/
+
+    .padding-sample div.active{
+    box-sizing: border-box;
+    }
+
+    /*===========================================*/
+
+
+    /*セレクターの例*/
+    /*===========================================*/
+
+    ul{
+    }
+    ul li{
+    }
+
+
+    /*===========================================*/
+
+    table[border="1"]{
+      border: 0px;
+    }
+    table[border="1"] td{
+      padding: 10px;
+    }
+
+    ul > li{
+      color: red;
+    }
+
+  </style>
+
+</head>
+<body>
+<div id="container">
+
+  <h1>タイトル</h1>
+
+  <h2>box-sizing</h2>
+  <div class="padding-sample">
+    <div class="active">
+      <p>テキスト</p>
+    </div>
+    <div class="inactive">
+      <p>テキスト</p>
+    </div>
+  </div>
+
+  <hr style="clear: both">
+
+  <h2>セレクターテスト</h2>
+  <ul>
+    <li>テキスト１</li>
+    <li>テキスト２</li>
+    <li>テキスト３</li>
+    <ul>
+      <li>テキスト２-1</li>
+      <li>テキスト２-2</li>
+    </ul>
+    <li>テキスト４</li>
+    <li>テキスト５</li>
+  </ul>
+
+  <hr style="clear: both">
+
+
+  <h2>要素指定</h2>
+  <table border="1">
+    <tr>
+      <th>タイトル</th>
+      <th>内容</th>
+    </tr>
+    <tr>
+      <td>テキストテキスト</td>
+      <td>テキストテキストテキストテキスト</td>
+    </tr>
+  </table>
+
+  <hr style="clear: both">
+
+
+</div>
+
+
+
+
+</body>
+</html>
