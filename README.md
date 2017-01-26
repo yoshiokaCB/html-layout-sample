@@ -9,3 +9,12 @@ $ git clone https://github.com/yoshiokaCB/html-layout-sample.git
 # 課題
 
 index.htmlを表示し、同じ表示になるようにhtmlとcssのファイルを作成してください。
+
+# gitでローカルのファイルを保存してアップする手順
+
+```
+git add .
+git commit -m "コメント"
+git push origin master
+```
+
